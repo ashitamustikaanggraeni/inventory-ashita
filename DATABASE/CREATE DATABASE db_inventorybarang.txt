@@ -1,0 +1,3 @@
+ CREATE DATABASE db_inventorybarang 
+CREATE TABLE barang(id_barang int PRIMARY KEY, nama_barang varchar(50), harga INT, stok int,id_jenis int)
+CREATE TABLE jenis(id_jenis int PRIMARY KEY, nama_jenis varchar(50))
