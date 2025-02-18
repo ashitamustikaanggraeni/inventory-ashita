@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>barang</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -71,8 +72,8 @@
                         <td><?php echo $result['stok'] ?></td>
                         <td><?php echo $result['id_jenis'] ?></td>
                         <td>
-                        <a href="" class="btn btn-secondary">Edit</a>
-                        <a href="" class="btn btn-dark">Hapus</a>
+                        <a href="edit.php?id=<?php echo $result['id_barang'] ?>" class="btn btn-secondary"><i class="fa-regular fa-pen-to-square"></i>Edit</a>
+                        <a href="hapus.php?id=<?php echo $result['id_barang'] ?>" class="btn btn-dark"><i class="fa-solid fa-trash-can"></i></i>Hapus</a>
                         </td>
                     </tr>
                     <?php
@@ -84,7 +85,7 @@
             ?>
         </tbody>
     </table>
-    <a href="tambah.php" class="btn btn-success">tambah</a>
+    <a href="tambah.php" class="btn btn-success"><i class="fa-solid fa-cart-plus"></i>tambah</a>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
